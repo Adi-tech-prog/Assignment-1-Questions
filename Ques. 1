@@ -5,7 +5,6 @@ Where x,𝑦,𝑧 are integers.  -----------------------------------------------
 
 
 #include <stdio.h>
-
 int main() {
     int x, y, z;
     int expression_a, expression_b;
