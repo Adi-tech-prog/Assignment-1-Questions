@@ -27,3 +27,12 @@ int main() {
 
     return 0;
 }
+
+
+OUTPUT :-
+Enter value for x: 2
+Enter value for y: 3
+Enter value for z: 4
+Result of expression (a): 68
+Result of expression (b): 75
+
