@@ -1,7 +1,6 @@
 Write a C program to input an amount from the user and print the minimum number of notes (500, 100, 50, 20, 10, 5, 2, 1) required for the amount. -------------------------------
 
 #include <stdio.h>
-
 int main() {
     int amount;
 
