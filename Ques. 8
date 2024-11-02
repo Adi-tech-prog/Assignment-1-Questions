@@ -1,0 +1,38 @@
+Write a C program that takes the length and width of a rectangular yard and the length and width of a rectangular house situated in the yard. Your program should compute the time required to cut the grass at the rate of two square feet a second.
+-----------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    float yard_length, yard_width;
+    float house_length, house_width;
+    float yard_area, house_area, grass_area;
+    float time_to_cut_grass;
+
+    // Input length and width of the yard
+    printf("Enter the length and width of the yard (in feet): ");
+    scanf("%f %f", &yard_length, &yard_width);
+
+    // Input length and width of the house
+    printf("Enter the length and width of the house (in feet): ");
+    scanf("%f %f", &house_length, &house_width);
+
+    // Calculate areas
+    yard_area = yard_length * yard_width;
+    house_area = house_length * house_width;
+    grass_area = yard_area - house_area;
+
+    // Calculate time to cut grass
+    time_to_cut_grass = grass_area / 2.0;
+
+    // Display the time required
+    printf("Time required to cut the grass: %.2f seconds\n", time_to_cut_grass);
+
+    return 0;
+}
+
+
+OUTPUT :-
+Enter the length and width of the yard (in feet): 100 50
+Enter the length and width of the house (in feet): 40 20
+Time required to cut the grass: 2380.00 seconds
