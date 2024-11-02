@@ -31,3 +31,15 @@ int main() {
 
     return 0;
 }
+
+
+OUTPUT:-
+Enter the amount: 1268
+500: 2
+100: 2
+50: 1
+20: 0
+10: 1
+5: 1
+2: 1
+1: 1
