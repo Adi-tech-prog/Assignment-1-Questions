@@ -39,3 +39,8 @@ int main() {
 
     return 0;
 }
+
+
+OUTPUT :-
+Roots are real and equal:
+Root 1 = Root 2 = -1.00
