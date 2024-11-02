@@ -25,3 +25,10 @@ int main() {
 
     return 0;
 }
+
+
+OUTPUT :-
+Pythagorean Triple:
+Side 1: 5
+Side 2: 12
+Hypotenuse: 13
