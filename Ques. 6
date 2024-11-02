@@ -1,4 +1,4 @@
-Write a C program to check whether a given number is even or odd without using modulus and division operator.
+Write a C program to check whether a given number is even or odd without using modulus and division operator. ------------------------------------
 
 #include <stdio.h>
 int main() {
