@@ -1,0 +1,32 @@
+Write a C program to evaluate:
+
+
+#include <stdio.h>
+#include <math.h>
+
+double evaluate_fx(int x) {
+    if (x < 0) {
+        return 1 + (x / sqrt(1 + x * x));
+    } else if (x == 0) {
+        return 0;
+    } else { // x > 0
+        return 1 - (x / sqrt(1 + x * x));
+    }
+}
+
+int main() {
+    int x;
+    double result;
+
+    // Prompt user to input a value for x
+    printf("Enter a value for x: ");
+    scanf("%d", &x);
+
+    // Evaluate f(x)
+    result = evaluate_fx(x);
+
+    // Display the result
+    printf("f(x) = %.2f\n", result);
+
+    return 0;
+}
