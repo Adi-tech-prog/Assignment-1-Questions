@@ -2,31 +2,37 @@ Write a C program to evaluate:
 
 
 #include <stdio.h>
-#include <math.h>
-
-double evaluate_fx(int x) {
-    if (x < 0) {
-        return 1 + (x / sqrt(1 + x * x));
-    } else if (x == 0) {
-        return 0;
-    } else { // x > 0
-        return 1 - (x / sqrt(1 + x * x));
-    }
-}
+#include <math.h>  // For sqrt() function
 
 int main() {
-    int x;
-    double result;
+    double x, f;
 
-    // Prompt user to input a value for x
-    printf("Enter a value for x: ");
-    scanf("%d", &x);
+    // Taking input value for x
+    printf("Enter the value of x: ");
+    scanf("%lf", &x);
 
-    // Evaluate f(x)
-    result = evaluate_fx(x);
+    // Evaluating f(x) based on the value of x
+    if (x < 0) {
+        f = 1 + (x / sqrt(1 + x * x));
+    } else if (x == 0) {
+        f = 0;
+    } else {
+        f = 1 - (x / sqrt(1 + x * x));
+    }
 
-    // Display the result
-    printf("f(x) = %.2f\n", result);
+    // Output the result
+    printf("The value of f(x) is: %.6lf\n", f);
 
     return 0;
 }
+
+
+OUTPUT:-
+Enter the value of x: -2
+The value of f(x) is: -0.447214
+
+Enter the value of x: 0
+The value of f(x) is: 0.000000
+
+Enter the value of x: 3
+The value of f(x) is: 0.554700
