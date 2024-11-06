@@ -8,16 +8,13 @@ int main() {
     int m, n;
     int side1, side2, hypotenuse;
 
-    // Input values for m and n
     printf("Enter values for m and n: ");
     scanf("%d %d", &m, &n);
 
-    // Calculate Pythagorean triple
     side1 = (m * m) - (n * n);
     side2 = 2 * m * n;
     hypotenuse = (m * m) + (n * n);
 
-    // Display the results
     printf("Pythagorean Triple:\n");
     printf("Side 1: %d\n", side1);
     printf("Side 2: %d\n", side2);
